@@ -1,0 +1,10 @@
+.reviews-section {
+  background: url("./../images/previews/strawberry-bg.png") right 21% top 6% no-repeat;
+  position: relative;
+}
+.reviews-section::before {
+  position: absolute;
+  content: url("./../images/previews/berries-left.png");
+  left: 0;
+  bottom: -80px;
+}
