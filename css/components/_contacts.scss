@@ -1,0 +1,19 @@
+.phone-number_theme_green{
+  font-size: rem(21px);
+  color: $darkGreen;
+}
+.contacts__place{
+  color: #292929;
+}
+.phone-number__icon-green{
+  fill: $darkGreen;
+}
+
+.contacts{
+  @include phones{
+    margin-bottom: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+  }
+}

@@ -1,0 +1,9 @@
+.order-section{
+  background: url("./../images/order/leaf.png") right bottom 14% no-repeat,
+  url("./../images/order/one-berry.png") left 9% bottom 6% no-repeat,
+  url("./../images/order/form-bg.png") center center no-repeat;
+
+  @include tablets{
+    background: url("./../images/order/form-bg.png") center center no-repeat;
+  }
+}
