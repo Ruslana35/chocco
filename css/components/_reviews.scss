@@ -1,12 +1,13 @@
 .reviews__display{
   background: #F8FAF9 url("./../images/previews/blackberry.png") top 5% right no-repeat;
-  padding: rem(50px) rem(95px) rem(54px);
+  padding: rem(42px) rem(165px) rem(46px) rem(42px);
   overflow: hidden;
   position: relative;
   margin-bottom: rem(15px);
 
     @include tablets{
-      padding: rem(30px) rem(23px) rem(54px);;
+      padding: rem(60px) rem(23px) rem(54px);
+      margin-bottom: rem(50px);
     }
 
     &::before{

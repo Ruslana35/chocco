@@ -128,9 +128,9 @@ img {
   }
   .hero__title-section:before {
     content: "";
-    margin-bottom: 16px;
-    width: 17.5555555556rem;
-    height: 18.3333333333rem;
+    margin-bottom: 1.1111111111rem;
+    width: 22.2222222222rem;
+    height: 22.2222222222rem;
     background: url("./../images/tablets/hero-bars.png") center center/contain no-repeat;
   }
 }
@@ -295,7 +295,7 @@ img {
 @media screen and (max-width: 480px) {
   .benefits__item {
     padding: 0;
-    margin-bottom: 0.6666666667rem;
+    margin-bottom: 2.7777777778rem;
   }
 }
 .benefits__item:before {
@@ -380,6 +380,11 @@ img {
   margin-bottom: 2.6666666667rem;
   font-weight: 400;
 }
+@media screen and (max-width: 768px) {
+  .headline__subtitle {
+    padding: 0 20%;
+  }
+}
 @media screen and (max-width: 480px) {
   .headline__subtitle {
     padding: 0 5%;
@@ -414,14 +419,15 @@ img {
 
 .reviews__display {
   background: #F8FAF9 url("./../images/previews/blackberry.png") top 5% right no-repeat;
-  padding: 2.7777777778rem 5.2777777778rem 3rem;
+  padding: 2.3333333333rem 9.1666666667rem 2.5555555556rem 2.3333333333rem;
   overflow: hidden;
   position: relative;
   margin-bottom: 0.8333333333rem;
 }
 @media screen and (max-width: 768px) {
   .reviews__display {
-    padding: 1.6666666667rem 1.2777777778rem 3rem;
+    padding: 3.3333333333rem 1.2777777778rem 3rem;
+    margin-bottom: 2.7777777778rem;
   }
 }
 .reviews__display::before {
@@ -499,8 +505,8 @@ img {
 }
 
 .interactive-avatar {
-  width: 4.4444444444rem;
-  height: 4.4444444444rem;
+  width: 4.1111111111rem;
+  height: 4.1111111111rem;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -758,7 +764,7 @@ img {
 }
 
 .phone-number {
-  font-size: 1.3333333333rem;
+  font-size: 1.2222222222rem;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -839,11 +845,6 @@ img {
   object-fit: cover;
 }
 
-.phone-number_theme_green {
-  font-size: 1.1666666667rem;
-  color: #0b4d3c;
-}
-
 .contacts__place {
   color: #292929;
 }
@@ -852,6 +853,11 @@ img {
   fill: #0b4d3c;
 }
 
+.contacts {
+  font-style: normal;
+  font-size: 1.1666666667rem;
+  color: #010101;
+}
 @media screen and (max-width: 480px) {
   .contacts {
     margin-bottom: 10px;
@@ -859,6 +865,10 @@ img {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.contacts__phone {
+  color: #497870;
 }
 
 .socials__item__icon {

@@ -43,9 +43,9 @@
 
     &:before{
       content: "";
-      margin-bottom: 16px;
-      width: rem(316px);
-      height: rem(330px);
+      margin-bottom: rem(20px);
+      width: rem(400px);
+      height: rem(400px);
       background: url("./../images/tablets/hero-bars.png") center center / contain no-repeat;
     }
   }
