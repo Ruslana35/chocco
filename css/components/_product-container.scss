@@ -1,0 +1,30 @@
+.product__container{
+  display: flex;
+  align-items: flex-end;
+  
+    @include tablets{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+.product__col{
+  display: flex;
+  flex: 1;
+  margin-right: rem(24px);
+}
+.product__col:last-child{
+  margin-right: 0;
+}
+
+.product__col-content{
+  padding: rem(10px) rem(10px);
+  display: flex;
+  flex-direction: column;
+  @include tablets{
+    align-items: center;
+  }
+}
+
+

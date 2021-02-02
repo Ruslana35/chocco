@@ -7,7 +7,11 @@
 
     @include tablets{
       padding: rem(60px) rem(23px) rem(54px);
-      margin-bottom: rem(50px);
+    }
+    @include smallscreen{
+      padding: rem(30px) rem(20px);
+      margin-bottom: 0;
+      background: #F8FAF9
     }
 
     &::before{

@@ -5,6 +5,7 @@ $baseFontSize: 18px;
 
 $tablets:768px;
 $phones:480px;
+$smallscreen:375px;
 
 //colors
 $blue: #61c4d9;
@@ -15,6 +16,8 @@ $darkGreen:#0b4d3c;
 //z-indexes
 
 $z-fixed-menu: 100;
+$z-overlay: 500;
+$z-hamburger: 1000;
 
 //normalize
 @import url("./normalize.css");
@@ -47,6 +50,16 @@ $z-fixed-menu: 100;
 @import "./components/_map-section";
 @import "./components/_contacts";
 @import "./components/_socials";
+@import "./components/_product-ingredients";
+@import "./components/_product-container";
+@import "./components/_product-section";
+@import "./components/_product-content";
+@import "./components/_product-slider";
+@import "./components/_fullscreen-menu";
+@import "./components/_ingridient"
+
+
+
 
 
 

@@ -1,0 +1,46 @@
+
+.product__ingredients{
+  position: relative;
+}
+.product__ingredients-content{
+ background: rgba(255, 255, 255, 0.8);
+ box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+ border-radius: 2%;
+ padding: rem(25px) rem(25px);
+ width: rem(270px);
+ font-size: rem(16px);
+ display: none;
+ position: absolute;
+ top: 0;
+ right: 0;
+
+ &_active{
+   display: inline-block;
+ }
+}
+.ingridient__icon{
+  width: rem(32px);
+  height: rem(32px);
+  margin-right: rem(12px);
+}
+.product__ingredients__list{
+  display: flex;
+  flex-direction: column;
+}
+.product__ingredients__item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: rem(20px);
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+.ingridient__icon__beans, .ingridient__icon__almond{
+  width: rem(24px);
+  height: rem(24px);
+}
+.ingridient__text{
+  width: 152px;
+}

@@ -15,6 +15,7 @@
       content: url("./../images/benefits/bars-and-berries.png");
       bottom: rem(-120px);
       left: 0;
+      z-index: 10;
 
       @include phones{
         display: none;

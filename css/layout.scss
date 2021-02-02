@@ -7,6 +7,11 @@ html{
   @include phones {
     font-size: $baseFontSize - 2px;
   }
+  
+  @include smallscreen {
+    font-size: $baseFontSize - 4px;
+  }
+
 }
 html, body{
   height: 100%;

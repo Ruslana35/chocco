@@ -15,4 +15,7 @@
   @include phones{
     padding:0 5%;
   }
+  @include phones{
+    margin-bottom: rem(15px);
+  }
 }

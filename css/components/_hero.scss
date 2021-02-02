@@ -47,6 +47,11 @@
       width: rem(400px);
       height: rem(400px);
       background: url("./../images/tablets/hero-bars.png") center center / contain no-repeat;
+
+      @include phones{
+        width: rem(250px);
+        height: rem(250px);
+      }
     }
   }
 }
@@ -73,6 +78,10 @@
   font-weight: bold;
   margin-bottom: rem(15px);
   text-transform: uppercase;
+
+  @include phones{
+    font-size: rem(40px);
+  }
 }
 .hero__title-desc{
   font-size: rem(21px);

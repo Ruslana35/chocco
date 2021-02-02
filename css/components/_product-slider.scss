@@ -1,0 +1,27 @@
+.products-slider__arrows {
+  width: rem(30px);
+  height: rem(27px);
+  cursor: pointer;
+
+  @include tablets{
+    position: absolute;
+    top: 25%;
+  }
+  &_direction_prev{
+    @include tablets{
+      left: 0;
+    }
+  }
+  &_direction_next{
+    @include tablets{
+      right: 0;
+    }
+  }
+}
+
+.products-slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
