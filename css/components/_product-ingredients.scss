@@ -1,4 +1,5 @@
 .product__ingredients{
+  position: relative;
   @include tablets{
     display: none;
   }

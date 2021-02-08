@@ -1,0 +1,13 @@
+.team_version_mobile{
+  display: none;
+
+  @include tablets {
+    display: flex;
+  }
+}
+.team_version_desktop{
+
+  @include tablets {
+    display: none;
+  }
+}

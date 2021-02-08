@@ -4,6 +4,7 @@
   overflow: hidden;
   position: relative;
   margin-bottom: rem(15px);
+  min-height: rem(280px);
 
     @include tablets{
       padding: rem(60px) rem(23px) rem(54px);
@@ -29,11 +30,20 @@
 }
 .reviews__display-inner{
   display: flex;
+  position: absolute;
+  pointer-events: none;
+  transition: .3s;
+  opacity: 0;
   @include tablets{
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
+}
+.reviews__display-inner.active{
+  position: static;
+  opacity: 1;
+  pointer-events: upset;
 }
 .reviews__avatar{
   width: rem(254px);

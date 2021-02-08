@@ -1,27 +1,32 @@
-.products-slider__arrows {
-  width: rem(30px);
-  height: rem(27px);
-  cursor: pointer;
-
-  @include tablets{
-    position: absolute;
-    top: 25%;
-  }
-  &_direction_prev{
-    @include tablets{
-      left: 0;
-    }
-  }
-  &_direction_next{
-    @include tablets{
-      right: 0;
-    }
-  }
-}
 
 .products-slider{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 
+  .bx-wrapper{
+    border: 0 !important;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+.product-slider__arrow{
+  background: url("/images/icons/arrow.svg") center center no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  width: rem(13px);
+  height: rem(28px);
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  
+
+  
+  &_direction_prev{
+    left: 0;
+  }
+  
+  &_direction_next{
+    transform: rotate(-180deg);
+    right: 0;
+  }
 }

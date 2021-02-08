@@ -78,4 +78,9 @@
   @include tablets{
     justify-content: center;
   }
+
+  & input{
+    cursor: pointer;
+    outline: transparent;
+  }
 }
