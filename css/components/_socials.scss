@@ -1,0 +1,21 @@
+.socials__item__icon{
+  fill: #B3B3B3;
+  width: rem(20px);
+  height: rem(20px);
+}
+.socials{
+  display: flex;
+}
+.socials__item{
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.socials__item_active .socials__item__icon{
+  fill: #292929;
+
+}
+.socials__item__icon:hover{
+  fill: #292929;
+}
+

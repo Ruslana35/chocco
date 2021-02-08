@@ -1,0 +1,32 @@
+
+.products-slider{
+  position: relative;
+
+  .bx-wrapper{
+    border: 0 !important;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+.product-slider__arrow{
+  background: url("/arrow.svg") center center no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  width: rem(13px);
+  height: rem(28px);
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  
+
+  
+  &_direction_prev{
+    left: 0;
+  }
+  
+  &_direction_next{
+    transform: rotate(-180deg);
+    right: 0;
+  }
+}

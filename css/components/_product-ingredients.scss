@@ -1,0 +1,34 @@
+.product__ingredients{
+  position: relative;
+  @include tablets{
+    display: none;
+  }
+}
+
+
+.product__ingredients-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: rem(91px);
+  width: rem(91px);
+  background:  #86C3D7;
+  border-radius: 3%;
+  margin-bottom: rem(23px);
+  cursor: pointer;
+}
+
+.product__ingredients-image-title{
+  font-size: rem(14px);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+.product__ingredients__icon{
+  fill: #fff;
+  width: rem(46px);
+  height: rem(46px);
+  margin-bottom: 4px;
+}
