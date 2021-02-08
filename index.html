@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chocco-project</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -154,9 +156,6 @@
       <section class="section products-section">
         <div class="container">
           <div class="products-slider">
-            <svg class="products-slider__arrows products-slider__arrows_direction_prev">
-              <use xlink:href="./images/icons/sprite.svg#arrow-prev"></use>
-            </svg>
             <ul class="products">
               <li class="products_item product">
                 <div class="product__container">
@@ -173,7 +172,7 @@
                         </svg>
                         <div class="product__ingredients-image-title" >Состав</div>
                       </div>
-                      <div class="product__ingredients-content" id="product__ingredients">
+                      <div class="product__ingredients-content" id="productIngredients">
                         <ul class="product__ingredients__list ">
                           <li class="product__ingredients__item ingridient">
                             <svg class="ingridient__icon">
@@ -243,21 +242,237 @@
                   </div>
                 </div>
               </li>
+              <li class="products_item product">
+                <div class="product__container">
+                  <div class="product__col">
+                    <div class="product__img">
+                      <img src="./images/products/buttons-blue.png" alt="button-product-blue" class="product__pic-button" >
+                    </div>
+                  </div>
+                  <div class="product__col product__col-content">
+                    <div class="product__ingredients">
+                      <div class="product__ingredients-image" id="ingredientClick">
+                        <svg class="product__ingredients__icon">
+                          <use xlink:href="./images/icons/sprite.svg#ingredients"></use>
+                        </svg>
+                        <div class="product__ingredients-image-title" >Состав</div>
+                      </div>
+                      <div class="product__ingredients-content" id="productIngredients">
+                        <ul class="product__ingredients__list ">
+                          <li class="product__ingredients__item ingridient">
+                            <svg class="ingridient__icon">
+                              <use xlink:href="./images/icons/sprite.svg#oat"></use>
+                            </svg>
+                            <div class="ingridient__text">Овёс</div>
+                            <div class="ingridient__weight">25г</div>
+                          </li>
+                          <li class="product__ingredients__item ingridient">
+                            <svg class="ingridient__icon ">
+                              <use xlink:href="./images/icons/sprite.svg#seaweed"></use>
+                            </svg>
+                            <div class="ingridient__text">Мор. водоросли</div>
+                            <div class="ingridient__weight">15г</div>
+                          </li>
+                          <li class="product__ingredients__item ingridient">
+                            <svg class="ingridient__icon ingridient__icon__almond">
+                              <use xlink:href="./images/icons/sprite.svg#almond"></use>
+                            </svg>
+                            <div class="ingridient__text">Миндаль</div>
+                            <div class="ingridient__weight">20г</div>
+                          </li>
+                          <li class="product__ingredients__item ingridient">
+                            <svg class="ingridient__icon">
+                              <use xlink:href="./images/icons/sprite.svg#powder"></use>
+                            </svg>
+                            <div class="ingridient__text">Сухое молоко</div>
+                            <div class="ingridient__weight">10г</div>
+                          </li>
+                          <li class="product__ingredients__item ingridient">
+                            <svg class="ingridient__icon">
+                              <use xlink:href="./images/icons/sprite.svg#seeds"></use>
+                            </svg>
+                            <div class="ingridient__text">Тыкв. семечки</div>
+                            <div class="ingridient__weight">20г</div>
+                          </li>
+                          <li class="product__ingredients__item ingridient">
+                            <svg class="ingridient__icon">
+                              <use xlink:href="./images/icons/sprite.svg#honey"></use>
+                            </svg>
+                            <div class="ingridient__text">Зам. сахара</div>
+                            <div class="ingridient__weight">4г</div>
+                          </li>
+                          <li class="product__ingredients__item ingridient">
+                            <svg class="ingridient__icon ingridient__icon__beans">
+                              <use xlink:href="./images/icons/sprite.svg#beans"></use>
+                            </svg>
+                            <div class="ingridient__text">Какао бобы</div>
+                            <div class="ingridient__weight">4г</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="product__title section__title">Батончик “Морские водоросли”</h2>
+                    <div class="product__text">
+                      <p>Гранола из морских водорослей с овсом, миндалем и тыквенными семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
+                    </div>
+                    <table class="product__values">
+                      <tr class ="product__values-titles" >
+                        <td class ="product__values-call">Калорийность</td>
+                        <td>Вес</td>
+                      </tr>
+                      <tr class ="product__values-value">
+                        <td>120 ккал</td>
+                        <td>98 грамм</td>
+                      </tr>
+                      <tr>
+                        <td class="product__price" >140 ₽</td>
+                        <td class="product__order-btn">
+                          <a href="#" class="btn btn_theme_green">Заказать</a>
+                        </td>
+                      </tr>                    
+                    </table>
+                  </div>
+                </div>
+              </li>
             </ul>
-            <svg class="products-slider__arrows products-slider__arrows_direction_next">
-              <use xlink:href="./images/icons/sprite.svg#arrow-next"></use>
-            </svg>
+            <div class="product-slider__arrows">
+              <a href="#" class="product-slider__arrow product-slider__arrow_direction_prev">
+              </a>
+              <a href="#" class="product-slider__arrow product-slider__arrow_direction_next">
+              </a>
+            </div>
           </div>
+        </div>
+      </section>
+      <section class="section team-section">
+        <div class="container">
+          <div class="section__title">Команда</div>
+          <ul class="team team_version_desktop">
+            <li class="team__item">
+              <div class="team__member">
+                <img src="./images/team/friz-man.jpg" alt="" class="team__member-img">
+              </div>
+              <button class="team__title" type="button">Борис Федорович</button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <div class="team__content__job">Главный технолог</div>
+                  <div class="team__content__info">
+                    Отвечает за вкусовые качества и калорийность.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__member">
+                <img src="./images/team/smiling-grl.jpg" alt="" class="team__member-img">
+              </div>
+              <button class="team__title" type="button">Алла Иванова</button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <div class="team__content__job">Специалист по упаковке</div>
+                  <div class="team__content__info">
+                    Автор запоминающегося стиля наших батончиков.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__member">
+                <img src="./images/team/man.jpg" alt="" class="team__member-img">
+              </div>
+              <button class="team__title" type="button">Кирилл Матросов</button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <div class="team__content__job">Оператор</div>
+                  <div class="team__content__info">
+                    С радостью поможет подобрать батончики и оформить заказ. 
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__member">
+                <img src="./images/team/girl-brown-hair.jpg" alt="" class="team__member-img">
+              </div>
+              <button class="team__title" type="button">Мила Рыжкова</button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <div class="team__content__job">PR, маркетинг</div>
+                  <div class="team__content__info">
+                    По всем вопросам сотрудничества и рекламы писать только Миле. 
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="team team_version_mobile">
+            <li class="team__item">
+              <button class="team__title" type="button">Борис Федорович</button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <div class="team__member">
+                    <img src="./images/team/friz-man.jpg" alt="" class="team__member-img">
+                  </div>
+                  <div class="team__content__job">Главный технолог</div>
+                  <div class="team__content__info">
+                    Отвечает за вкусовые качества и калорийность.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <button class="team__title" type="button">Алла Иванова</button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <div class="team__member">
+                    <img src="./images/team/smiling-grl.jpg" alt="" class="team__member-img">
+                  </div>
+                  <div class="team__content__job">Специалист по упаковке</div>
+                  <div class="team__content__info">
+                    Автор запоминающегося стиля наших батончиков.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <button class="team__title" type="button">Кирилл Матросов</button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <div class="team__member">
+                    <img src="./images/team/man.jpg" alt="" class="team__member-img">
+                  </div>
+                  <div class="team__content__job">Оператор</div>
+                  <div class="team__content__info">
+                    С радостью поможет подобрать батончики и оформить заказ. 
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <button class="team__title" type="button">Мила Рыжкова</button>
+              <div class="team__content">
+                <div class="team__content-block">
+                  <div class="team__member">
+                    <img src="./images/team/girl-brown-hair.jpg" alt="" class="team__member-img">
+                  </div>
+                  <div class="team__content__job">PR, маркетинг</div>
+                  <div class="team__content__info">
+                    По всем вопросам сотрудничества и рекламы писать только Миле. 
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="section reviews-section">
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
           <div class="reviews">
-            <div class="reviews__display">
-              <div class="reviews__display-inner">
+            <ul class="reviews__display">
+              <li class="reviews__display-inner active" data-article = "one">
                 <div class="reviews__avatar">
-                  <img src="./images/previews/black-hair-grl.png" alt="" class="reviews__avatar-img" />
+                  <img src="./images/previews/black-hair-grl.png" alt="black hair girl" class="reviews__avatar-img" />
                 </div>
                 <article class="reviews__content">
                   <h3 class="reviews__title">Лучший перекус</h3>
@@ -270,21 +485,49 @@
                   </div>
                   <div class="reviews__author">Алёна Хмельницкая</div>
                 </article>
-              </div>
-            </div>
+              </li>
+              <li class="reviews__display-inner" data-article = "two">
+                <div class="reviews__avatar">
+                  <img src="./images/previews/boy.png" alt="boy" class="reviews__avatar-img" />
+                </div>
+                <article class="reviews__content">
+                  <h3 class="reviews__title">Идеально подходят для спортсменов</h3>
+                  <div class="reviews__text">
+                    <p>
+                      После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт. 
+                    </p>
+                  </div>
+                  <div class="reviews__author">Вадим Грачев</div>
+                </article>
+              </li>
+              <li class="reviews__display-inner" data-article = "three">
+                <div class="reviews__avatar">
+                  <img src="./images/previews/brown-hair-grl.png" alt="brown hair girl" class="reviews__avatar-img" />
+                </div>
+                <article class="reviews__content">
+                  <h3 class="reviews__title">Лучшие батончики премиум уровня</h3>
+                  <div class="reviews__text">
+                    <p>
+                      Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.
+                    </p>
+                  </div>
+                  <div class="reviews__author">Мария Орлова</div>
+                </article>
+              </li>
+            </ul>
             <ul class="reviews__switcher">
               <li class="reviews__switcher-item interactive-avatar interactive-avatar_active">
-                <a href="#" class="interactive-avatar__link">
+                <a href="#" class="interactive-avatar__link" data-open="one">
                   <img src="./images/previews/black-hair-grl.png" alt="black hair girl" class="interactive-avatar__img">
                 </a>
               </li>
               <li class="reviews__switcher-item interactive-avatar">
-                <a href="#" class="interactive-avatar__link">
+                <a href="#" class="interactive-avatar__link" data-open="two">
                   <img src="./images/previews/boy.png" alt="boy" class="interactive-avatar__img">
                 </a>
               </li>
-              <li class="reviews__switcher-item interactive-avatar">
-                <a href="#" class="interactive-avatar__link">
+              <li class="reviews__switcher-item interactive-avatar" >
+                <a href="#" class="interactive-avatar__link" data-open="three">
                   <img src="./images/previews/brown-hair-grl.png" alt="brown hair girl" class="interactive-avatar__img">
                 </a>
               </li>
@@ -296,39 +539,40 @@
         <div class="container">
           <h2 class="section__title">Закажите доставку</h2>
           <form class="form">
+            <input type="hidden" name="to" value="somewhere@gmail.com">
             <div class="form__col">
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Имя</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="name">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Телефон</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="phone">
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Улица</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="street">
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Дом</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="home">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Корпус</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="part">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Квартира</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="appartments">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Этаж</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="floor">
                 </label>
               </div>
             </div>
@@ -336,7 +580,7 @@
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Комментарий</div>
-                  <textarea class="form__input form__input_textarea"></textarea>
+                  <textarea class="form__input form__input_textarea" name="comment"></textarea>
                 </label>
               </div>
               <div class="form__controls ">
@@ -365,7 +609,16 @@
             </div>
           </form>
         </div>
-
+        <div class="modal" id="modal">
+          <div class="modal__container">
+            <div class="modal__content">
+              Сообщение отправлено
+            </div>
+            <div class="modal__button-container">
+              <a href="#" class="btn btn_theme_green app-close-modal">Закрыть</a>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="section map-section">
         <div class="map">
@@ -471,7 +724,16 @@
       </nav>
     </div>
   </div>
-  <script src="overlay.js"></script>
+
+  <script src="./scripts/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="./scripts/overlay.js"></script>
+  <script src="./scripts/ingredients.js"></script>
+  <script src="./scripts/tabs.js"></script>
+  <script src="./scripts/team.js"></script>
+  <script src="./scripts/carusel.js"></script>
+  <script src="./scripts/modal.js"></script>
 </body>
 
 </html>
