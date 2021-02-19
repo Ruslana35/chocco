@@ -10,6 +10,7 @@
   }
   @include phones{
     padding: 0 max(20px, (100% - 450px) / 2 ) ;
+    font-size: rem(25px);
   }
 }
 .product__values-value{
@@ -49,17 +50,18 @@
   width: rem(500px);
   height: rem(470px);
   object-fit: cover; 
+
   @include tablets{
     width: rem(410px);
     height: rem(370px);
   }
-  @include tablets{
-    width: rem(390px);
-    height: rem(360px);
+  @include phones{
+    width: rem(380px);
+    height: rem(350px);
   }
   @include smallscreen{
-    width: rem(320px);
-    height: rem(300px);
+    width: rem(250px);
+    height: rem(220px);
   }
   
 }

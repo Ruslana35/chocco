@@ -10,22 +10,45 @@
   height: 20px;
   display: none;
 
-    &_active{
-      & .hamburger__plank:nth-child(1){
-        opacity: 0;
-      }
-      & .hamburger__plank:nth-child(2){
-        transform: rotate(45deg);
-      }
-      & .hamburger__plank:nth-child(3){
-        transform: rotate(-45deg) translateY(-6px) translateX(5px);
-      }
+  &_active{
+ 
+    & .hamburger__plank:nth-child(1){
+      opacity: 0;
     }
+    & .hamburger__plank:nth-child(2){
+      transform: rotate(45deg);
+    }
+    & .hamburger__plank:nth-child(3){
+      transform: rotate(-45deg) translateY(-6px) translateX(5px);
+    }
+  }
 
   @include tablets{
     display: inline-flex;
   }
+
+  &.hamburger_theme_black{
+    .hamburger__plank{
+      background: #000;
+    }
+
+  }
+
+  &.hamburger_active, .hamburger_theme_black {
+    .hamburger__plank{
+      background: #FFF;
+    }
+  }
+  
+  &.hamburger_theme_none{
+    .hamburger__plank{
+      background: transparent;
+    }
+  }
+
+
 }
+
 .hamburger__plank{
   display: block;
   background: #fff;

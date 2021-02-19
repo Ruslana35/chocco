@@ -1,0 +1,21 @@
+.player__controls{
+  height: rem(35px);
+  background-color: #3e3e3e;
+  display: flex;
+  margin-top: -9px;
+}
+
+.sound {
+  display: flex;
+  align-items: center;
+  margin: 0 rem(15px);
+  position: relative;
+  cursor: pointer;
+
+  &__volume{
+    margin-left: rem(10px);
+    margin-top: rem(-5px);
+  }
+
+}
+

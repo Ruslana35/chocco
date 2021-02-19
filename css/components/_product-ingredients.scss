@@ -17,6 +17,13 @@
   border-radius: 3%;
   margin-bottom: rem(23px);
   cursor: pointer;
+  position: relative;
+
+  &:hover{
+    .product__ingredients-content{
+      display: flex;
+    }
+  }
 }
 
 .product__ingredients-image-title{

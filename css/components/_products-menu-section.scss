@@ -1,0 +1,38 @@
+.products-menu-section{
+  position: relative;
+  color: #fff;
+  background: url("./../images/products-menu/bg-menu.png") center center/cover no-repeat;
+  
+  &::before{
+    content: "";
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+  }
+  &::after{
+    content: url("./../images/products-menu/strawberry.png");
+    left: 0;
+    top: rem(-75px);
+    position: absolute;
+
+    @include phones{
+      display: none;
+    }
+  }
+
+}
+.products-menu-section__title{
+  color: #fff;
+  position: absolute;
+  top: 0;
+  padding: rem(63px);
+  left: 0;
+  
+  @include phones{
+    padding: rem(40px);
+  }
+}
