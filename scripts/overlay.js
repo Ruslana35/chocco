@@ -1,6 +1,8 @@
 const humburger = document.querySelector("#humburger");
 const body = document.body;
 const overlayContainer = document.querySelector("#overlay")
+const items = document.querySelector(".menu__item")
+
 
 
 function toggleActiveMenu(){
@@ -16,9 +18,14 @@ humburger.addEventListener("click", e=> {
 })
 
 overlayContainer.addEventListener ("click", e =>{
-  if(e.target == overlayContainer) {
-    overlayContainer.classList.remove("fullscreen-menu_active");
-    humburger.classList.remove("hamburger_active");
+  e.preventDefault();
+  if(e.target == overlayContainer || e.target.classList.contains('menu__link')) {
+    toggleActiveMenu()
   }
+})
+
+items.addEventListener("click", e =>{
+  e.preventDefault()
+  overlayContainer.classList.remove("fullscreen-menu_active");
 })
 
